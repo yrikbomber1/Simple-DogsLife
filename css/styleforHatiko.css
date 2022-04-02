@@ -7,7 +7,10 @@ section{
     background-image: url(../img/Без\ названия.jpg);
 
     }
-    .accordion{}
+:root {
+    --color1: #05b1b1;
+    --color2:#52339a;
+}
     .accordion-item{
         position: relative;
         margin-bottom: 20px;
@@ -35,4 +38,32 @@ section{
     .accordion-item__input:checked ~.accordion-item__content{
         background-color: #eee;
         display:block;
+        
+    }
+    header{
+        padding: 10px 0;
+    }
+    .btn-itd {
+        display: block;
+        max-width: 200px;
+        margin: 4 auto;
+        padding: 5px 20px;
+        color: var(--bs-white);
+        background-color: var(--color2);
+    }
+    .btn-itd:hover{
+        color:var(--bs-white);
+        background-color: var(--color1);
+    }
+    .btn-itd1 {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 5px 20px;
+        color: var(--bs-white);
+        background-color: var(--color1);
+    }
+    .btn-itd1:hover{
+        color:var(--bs-white);
+        background-color: var(--color1);
     }
